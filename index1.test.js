@@ -15,8 +15,8 @@ test('Sunbathing increases temperature', () => {
 
 test('starve does not decrease hunger', () => {
     index.crocodile.hunger = 15
-    index.crocodile.starve
-    expect(index.crocodile.hunger).not.toBe(lessThan (15))
+    index.crocodile.starve()
+    expect(index.crocodile.hunger).toBe(40)
 })
 
 test('pass away changes alive', () => {
@@ -24,3 +24,14 @@ test('pass away changes alive', () => {
     expect(index.crocodile.alive).toBe(false)
 })
 
+const capybara = index.capybara
+
+test("Capybara will survive the bite", () => {
+    capybara.bitten()
+    expect(capybara.alive).toBe(true)
+})
+
+test("Capybara is injured after bite", () => {
+    capybara.bitten()
+    expect(capybara.injured).toBe(true)
+})

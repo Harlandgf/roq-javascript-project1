@@ -25,24 +25,33 @@ class Reptiles {
     passAway(){
         this.alive = false
     }
+
+    
+        
 }
 
+
 class Mammals {
-    constructor(animal, height, speed, hunger) {
+    constructor(animal, height, speed, hunger,) {
         this.animal = animal;
         this.height = height;
         this.speed = speed;
         this.hunger = hunger;
+        this.alive = true
+        this.injured = false
     }
 
     // Weight gain
     weightGain(){
         this.speed -+ 20
+        if (this.speed<5)
+        {this.alive = false}
     }
 
     // over eat
     overEat(){
-        this.hunger = 0
+        if (this.hunger = 0)
+        {this.alive = false}
     }
 
     // grow
@@ -55,6 +64,14 @@ class Mammals {
         this.speed += 10
         this.hunger =+15
     }
+    
+    // Mammal Bitten
+    bitten(){
+        if(this.speed<10)
+        {this.alive = false}
+        else{this.injured = true
+        console.log("Survived bite")}
+    }
 }
 
 class Fish {
@@ -64,6 +81,7 @@ class Fish {
         this.whichOcean = whichOcean;
         this.caught = false;
         this.strength = strength;
+        this.alive = true
     }
 
     //migrate
@@ -73,7 +91,8 @@ class Fish {
 
     // Get caught
     caght(){
-        this.caght = true
+        this.caught = true
+        this.alive = false
     }
 
     // grow in length
