@@ -1,5 +1,4 @@
 
-const { test } = require("picomatch")
 const index = require("./index")
 
 test('That eating decreases hunger', () => {
@@ -25,4 +24,3 @@ test('pass away changes alive', () => {
     expect(index.crocodile.alive).toBe(false)
 })
 
-test()

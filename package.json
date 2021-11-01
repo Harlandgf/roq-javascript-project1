@@ -1,4 +1,16 @@
 {
+  "name": "javascript-project-1",
+  "version": "1.0.0",
+  "description": "The Jest Setup - this time is should work",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "Harland Greenhill",
+  "license": "ISC",
   "devDependencies": {
     "jest": "^27.3.1"
   }
