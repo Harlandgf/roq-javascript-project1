@@ -36,6 +36,10 @@ class Reptiles {
         
 }
 
+// Create instances
+const crocodile = new Reptiles('Crocodile',50,23)
+
+const rainbowSnake = new Reptiles('Rainbow Snake',67,13)
 
 class Mammals {
     constructor(animal, height, speed, hunger,) {
@@ -80,6 +84,10 @@ class Mammals {
     }
 }
 
+// Create instances
+const capybara = new Mammals('Capybara',0.34, 16,27)
+
+
 class Fish {
     constructor(animal, length, whichOcean, strength) {
         this.animal = animal;
@@ -92,7 +100,7 @@ class Fish {
 
     //migrate
     migrate(){
-        if(this.whichOcean = "Atlantic")
+        if(this.whichOcean == "Atlantic")
         {this.whichOcean = "Pacific"}
 
         else
@@ -116,16 +124,13 @@ class Fish {
     }
 }
 
-const crocodile = new Reptiles('Crocodile',50,23)
-
-const rainbowSnake = new Reptiles('Rainbow Snake',67,13)
-
-const capybara = new Mammals('Capybara',0.34, 16,27)
-
+// Create instances
 const tigerShark = new Fish('Tiger Shark',15,"Pacific",55)
 
 const barracuda = new Fish('Barracuda', 2.2,'Indo-Pacific', 34 )
 
+
+// Export it all
 module.exports = {
     Reptiles,
     crocodile,
