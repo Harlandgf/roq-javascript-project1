@@ -95,7 +95,7 @@ class Fish {
         if(this.whichOcean = "Atlantic")
         {this.whichOcean = "Pacific"}
 
-        else if(this.whichOcean = "Pacific")
+        else
         {this.whichOcean = "Atlantic"}
     }
 
