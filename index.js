@@ -26,7 +26,13 @@ class Reptiles {
         this.alive = false
     }
 
-    
+    //Cool off
+    cool(){
+        this.temperature -= 10
+
+        if(this.temperature <= 0)
+        {this.alive = false}
+    }
         
 }
 
@@ -48,7 +54,7 @@ class Mammals {
         console.log("Animal ate to death")}
         
         else
-        {this.speed -+ 20}
+        {this.speed -= 20}
         
     }
 
