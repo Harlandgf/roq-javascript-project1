@@ -96,14 +96,14 @@ class Fish {
     }
 
     // Get caught
-    caght(){
+    fished(){
         this.caught = true
         this.alive = false
     }
 
     // grow in length
     growLonger(){
-        this.length ++
+        this.length += 0.1
     }
 
     //Evade capture
@@ -120,7 +120,7 @@ const capybara = new Mammals('Capybara',0.34, 16,27)
 
 const tigerShark = new Fish('Tiger Shark',15,"Pacific",55)
 
-const barracuda = new Fish('Barracuda', 2,'Indo-Pacific', 34 )
+const barracuda = new Fish('Barracuda', 2.2,'Indo-Pacific', 34 )
 
 module.exports = {
     Reptiles,
