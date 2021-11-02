@@ -92,7 +92,11 @@ class Fish {
 
     //migrate
     migrate(){
-        this.whichOcean = "Atlantic Ocean"
+        if(this.whichOcean = "Atlantic")
+        {this.whichOcean = "Pacific"}
+
+        else if(this.whichOcean = "Pacific")
+        {this.whichOcean = "Atlantic"}
     }
 
     // Get caught

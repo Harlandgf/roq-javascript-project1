@@ -21,3 +21,14 @@ test("That barracuda grow longer is close to the value expected", () => {
     expect(barracuda.length).toBeCloseTo(2.3, 5);
     barracuda.length = 2.2; //* Teardown
 })
+
+test("Migrate moves the tiger shark to Atlantic", () => {
+    tigerShark.migrate(); //* Setup
+    expect(tigerShark.whichOcean).toBe("Atlantic")
+    //tigerShark.whichOcean = "Pacific"; //* Teardown
+})
+
+test("Migrate Marlin moves it to Pacific", () => {
+    marlin.migrate(); //* Setup
+    expect(marlin.whichOcean).toBe("Pacific")
+})
