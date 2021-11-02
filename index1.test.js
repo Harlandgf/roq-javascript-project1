@@ -24,14 +24,3 @@ test('pass away changes alive', () => {
     expect(index.crocodile.alive).toBe(false)
 })
 
-const capybara = index.capybara
-
-test("Capybara will survive the bite", () => {
-    capybara.bitten()
-    expect(capybara.alive).toBe(true)
-})
-
-test("Capybara is injured after bite", () => {
-    capybara.bitten()
-    expect(capybara.injured).toBe(true)
-})

@@ -43,15 +43,13 @@ class Mammals {
 
     // Weight gain
     weightGain(){
-        this.speed -+ 20
-        if (this.speed<5)
-        {this.alive = false}
-    }
-
-    // over eat
-    overEat(){
-        if (this.hunger = 0)
-        {this.alive = false}
+        if (this.speed < 5)
+        {this.alive = false
+        console.log("Animal ate to death")}
+        
+        else
+        {this.speed -+ 20}
+        
     }
 
     // grow
@@ -61,15 +59,17 @@ class Mammals {
 
     // train
     train(){
-        this.speed += 10
-        this.hunger =+15
+        this.speed += 10;
+        this.hunger =+15;
     }
     
     // Mammal Bitten
     bitten(){
         if(this.speed<10)
         {this.alive = false}
-        else{this.injured = true
+        
+        else
+        {this.injured = true;
         console.log("Survived bite")}
     }
 }
