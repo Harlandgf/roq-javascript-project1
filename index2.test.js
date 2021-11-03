@@ -26,3 +26,13 @@ test("That weight gain decreases speed", () => {
     expect(capybara.speed).toBe(25)
     capybara.speed = 16; //* Teardown
 })
+
+platypus = new index.Mammals("Platypus", 0.2, 62, 28)
+
+test("Whether Platypus is an instance of Mammal class", () => {
+    expect(platypus).toBeInstanceOf(index.Mammals) 
+})
+
+test("That the Platypus is not injured when created", () => {
+    expect(platypus.injured).toBeFalsy()
+})

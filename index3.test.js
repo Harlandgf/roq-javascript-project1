@@ -31,4 +31,11 @@ test("Migrate moves the tiger shark to Atlantic", () => {
 test("Migrate Marlin moves it to Pacific", () => {
     marlin.migrate(); //* Setup
     expect(marlin.whichOcean).toBe("Pacific")
+    marlin.whichOcean = "Atlantic" //* Teardown
+})
+
+test("That a fish can migrate twice effectively", () => {
+    marlin.migrate() //* Setup
+    marlin.migrate() //* Setup
+    expect(marlin.whichOcean).toBe("Atlantic")
 })
