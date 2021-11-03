@@ -25,4 +25,4 @@
 - That barracuda grow longer is close to the value expected
 - Migrate moves the tiger shark to Atlantic
 - Migrate Marlin moves it to Pacific
--That a fish can migrate twice effectively
+- That a fish can migrate twice effectively
