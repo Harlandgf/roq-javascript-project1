@@ -25,7 +25,7 @@ test("That barracuda grow longer is close to the value expected", () => {
 test("Migrate moves the tiger shark to Atlantic", () => {
     tigerShark.migrate(); //* Setup
     expect(tigerShark.whichOcean).toBe("Atlantic")
-    //tigerShark.whichOcean = "Pacific"; //* Teardown
+    tigerShark.whichOcean = "Pacific"; //* Teardown
 })
 
 test("Migrate Marlin moves it to Pacific", () => {
